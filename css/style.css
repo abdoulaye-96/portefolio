@@ -1,0 +1,342 @@
+/* Navbar Link Styles */
+.nav-link {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+/* Hover Effect: Change Color */
+.nav-link:hover {
+    color: #61dafb;
+}
+
+/* Underline Animation */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #61dafb;
+    left: 50%;
+    bottom: 0;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Border Bottom Hover Effect */
+.nav-link {
+    color: #fff;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    color: #61dafb;
+    border-bottom: 2px solid #61dafb;
+}
+
+/* Slide-In Background Effect */
+.nav-link {
+    color: #fff;
+    position: relative;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: #61dafb;
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.nav-link:hover::before {
+    left: 0;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
+/* Scaling Text Effect */
+.nav-link {
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s;
+}
+
+.nav-link:hover {
+    color: #61dafb;
+    transform: scale(1.1);
+}
+
+/* hero section */
+#about {
+    height: 100vh;
+    /* background-image: url("css/dev.jpg"); */
+}
+#about h2 {
+    color: #333;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#about img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#about p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.progress div {
+    position: relative;
+    height: 20px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    overflow: hidden;
+}
+
+.pro-value1, .pro-value2, .pro-value3, .pro-value4 {
+    background-color: #61dafb;
+    height: 100%;
+    width: 0; /* Initial width */
+    animation: fill-bar 2s ease-out forwards;
+}
+
+@keyframes fill-bar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%; /* Change this value for each skill */
+    }
+}
+
+@media (max-width: 768px) {
+    #about .col-lg-5,
+    #about .col-lg-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #about {
+        padding: 20px;
+    }
+
+    #about img {
+        margin-bottom: 20px;
+    }
+}
+
+#about {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Barre de progression */
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Valeur de la barre */
+.progress .pro-value1,
+.progress .pro-value2,
+.progress .pro-value3,
+.progress .pro-value1 {
+    background: linear-gradient(to right, #7c3aed, #3b82f6); /* Du violet au bleu */
+    height: 100%;
+    width: 90%; /* Propriété initiale correspondant au pourcentage */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 14px;
+    transition: width 1s ease-in-out; /* Animation fluide */
+}
+
+.progress .pro-value2{
+background: linear-gradient(to right, #7c3aed, #3b82f6); /* Du violet au bleu */
+height: 100%;
+width: 90%; /* Propriété initiale correspondant au pourcentage */
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 20px;
+padding-left: 10px;
+color: #fff;
+font-size: 14px;
+transition: width 1s ease-in-out; /* Animation fluide */
+}
+
+.progress .pro-value3{
+background: linear-gradient(to right, #7c3aed, #3b82f6); /* Du violet au bleu */
+height: 100%;
+width: 90%; /* Propriété initiale correspondant au pourcentage */
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 20px;
+padding-left: 10px;
+color: #fff;
+font-size: 14px;
+transition: width 1s ease-in-out; /* Animation fluide */
+}
+
+.progress .pro-value4{
+background: linear-gradient(to right, #7c3aed, #3b82f6); /* Du violet au bleu */
+height: 100%;
+width: 50%; /* Propriété initiale correspondant au pourcentage */
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 20px;
+padding-left: 10px;
+color: #fff;
+font-size: 14px;
+transition: width 1s ease-in-out; /* Animation fluide */
+}
+
+.progress .pro-value6{
+    background: linear-gradient(to right, #7c3aed, #3b82f6); /* Du violet au bleu */
+    height: 100%;
+    width: 10%; /* Propriété initiale correspondant au pourcentage */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 14px;
+    transition: width 1s ease-in-out; /* Animation fluide */
+    }
+
+/* Personnalisation des pourcentages */
+.pro-value1 span,
+.pro-value2 span,
+.pro-value3 span,
+.pro-value4 span {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+/* Différenciation des couleurs */
+.pro-value2 {
+    background-color: #4caf50; /* Vert */
+    width: 95%;
+}
+
+.pro-value3 {
+    background-color: #ff9800; /* Orange */
+    width: 70%;
+}
+
+.pro-value4 {
+    background-color: #f44336; /* Rouge */
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .progress {
+        height: 15px;
+    }
+
+    .progress .pro-value1,
+    .progress .pro-value2,
+    .progress .pro-value3,
+    .progress .pro-value4 {
+        font-size: 12px;
+        padding: 0 5px;
+    }
+}
+
+.progress .pro-value1::after,
+.progress .pro-value2::after,
+.progress .pro-value3::after,
+.progress .pro-value4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.progress:hover .pro-value1::after,
+.progress:hover .pro-value2::after,
+.progress:hover .pro-value3::after,
+.progress:hover .pro-value4::after {
+    opacity: 1;
+}
+
+
+.cv a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #7c3aed, #3b82f6); /* Du violet au bleu */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv a:hover {
+    background-color: #61dafb;
+    color: #fff;
+}
+
+#skills h2 {    
+    padding-top: 10%;
+}
+
+
+
+/* Circle Icon Styling */
+.circle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin: 0 auto 20px;
+}
+
+/* Card Hover Effect */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
