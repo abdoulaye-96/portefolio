@@ -340,3 +340,7 @@ transition: width 1s ease-in-out; /* Animation fluide */
 .card:hover {
     transform: translateY(-10px);
 }
+
+#projects a {
+    align-items: center;
+}
